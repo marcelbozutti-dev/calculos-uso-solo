@@ -374,7 +374,7 @@ with aba_timeline:
           <div class="tl-title">Passo {p['passo']}: {p['titulo']}
             <span class="tl-badge {badge_class}">{p['badge']}</span>
           </div>
-          <div>Variação: <span class="tl-valor">{br(p['delta'])}</span> ({signo})</div>
+          <div>Valor da Área: <span class="tl-valor">{br(p['delta'])}</span> ({signo})</div>
           <div>Acumulado: <span class="tl-valor">{br(p['acumulado'])}</span></div>
           <div class="tl-formula">Fórmula: {p['formula']}</div>
         </div>
@@ -426,3 +426,4 @@ with aba_dados:
     st.subheader("📑 Dados filtrados por ID")
     st.dataframe(filtrado, use_container_width=True)
     st.caption(f"{filtrado.shape[0]} linhas selecionadas para os IDs: {', '.join(ids_matricula)}")
+
